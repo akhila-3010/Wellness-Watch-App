@@ -19,4 +19,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+  rollupOptions: {
+    input: path.resolve(__dirname, 'src/index.tsx') // change if your file is index.tsx
+  }
+}
+
 }));
